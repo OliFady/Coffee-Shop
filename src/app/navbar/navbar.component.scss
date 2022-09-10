@@ -3,7 +3,9 @@ $primary-color :#FAF4EE;
 *{
     margin: 0;
     padding: 0;
-    background-color: $primary-color;
+    background: none;
+    //background-color: transparent;
+    //background: rgba(255, 255, 255, 0.2)
 }
 
 .container{
