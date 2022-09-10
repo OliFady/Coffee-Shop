@@ -1,0 +1,94 @@
+.homepage {
+  background-image: url("../../assets/img/Mask\ Group\ 1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+  //background: none;
+}
+.container {
+  padding-top: 150px;
+  // flex-direction: column;
+  // position: relative;
+  display: flex;
+  justify-content: flex-start;
+  //align-items: center;
+  padding-left: 50px;
+
+  //padding-bottom: 30px;
+  // flex-grow: 1;
+}
+.heading {
+  //padding-top: 250px;
+  font-size: 60px;
+  position: relative;
+}
+.desc {
+  padding-top: 150px;
+  position: absolute;
+  font-size: 22px;
+  color: #cf9775;
+}
+.cup {
+  position: fixed;
+  right: 200px;
+  top: 250px;
+  width: 500px;
+  height: 450px;
+}
+.text {
+  font-size: 16px;
+  padding-top: 200px;
+  position: absolute;
+  color: #000000;
+}
+.btn {
+  padding: 16px;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-left: 50px;
+  position: relative;
+  top: 150px;
+  //position: absolute;
+  display: inline-block;
+  background-color: #cf9775;
+}
+.btn1:hover {
+  border: none;
+  background-color: #e6bda4;
+  color: white;
+}
+.btn2:hover {
+  background-color: #e6bda4;
+}
+.btn1 {
+  margin-left: 30px;
+  background: none;
+  // border-style: solid;
+  border: 2px solid #cf9775;
+  color: #cf9775;
+}
+.btn2 {
+  border: none;
+  color: #000000;
+}
+// h1{
+//       //position: fixed;
+//       font-size: 24px;
+//       color: #CF9775;
+//       justify-content: center;
+//       align-items: center;
+//       display: flex;
+//       //padding-left: 50px;
+//      // margin: auto;
+
+// }
+// h3{
+//     //position: fixed;
+//     font-size: 24px;
+//     color: #CF9775;
+//     justify-content: center;
+//     align-items: center;
+//     display: flex;
+//     //padding-left: 50px;
+//    // margin: auto;
+// }
