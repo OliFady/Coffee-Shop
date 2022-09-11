@@ -1,8 +1,9 @@
 .homepage {
-  background-image: url("../../assets/img/Mask\ Group\ 1.png");
+  background-image: url("../../../assets/img/Mask\ Group\ 1.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
+  padding-bottom: 50px;
   //background: none;
 }
 .container {
@@ -29,7 +30,7 @@
   color: #cf9775;
 }
 .cup {
-  position: fixed;
+  position: absolute;
   right: 200px;
   top: 250px;
   width: 500px;
@@ -52,6 +53,19 @@
   display: inline-block;
   background-color: #cf9775;
 }
+
+.card{
+  padding: 0 1rem;
+  display: grid;
+  row-gap: 1rem;
+  @media (min-width : 376px) {
+
+      padding: 0 0.5rem;
+      grid-template-columns: repeat(4,1fr);
+      column-gap: 1rem;
+  }
+}
+
 .btn1:hover {
   border: none;
   background-color: #e6bda4;
