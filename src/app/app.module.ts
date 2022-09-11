@@ -4,9 +4,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
+import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
-import { CardComponent } from './components/card/card.component';
+import { CardComponent } from './components/shared/card/card.component';
 
 @NgModule({
   declarations: [
