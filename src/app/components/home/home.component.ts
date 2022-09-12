@@ -7,7 +7,8 @@ import { ProductService } from 'src/app/services/product.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-
+  
+  filter : any;
   source : any;
   constructor(private api : ProductService) { }
 

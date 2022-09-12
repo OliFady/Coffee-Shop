@@ -1,0 +1,13 @@
+
+<div class="center">
+  <h4>Filter By: </h4>
+  <button class="btn btn1">Black Coffee</button>
+  <button class="btn btn2">Cuppuccino</button>
+  <button class="btn btn3">Frapuccino</button>
+
+    <input id="search" class="search" type="text" placeholder="Search" [(ngModel)]="filter"  >
+
+</div>
+<div class="card">
+    <app-card  *ngFor="let product of source" [product] = "product"></app-card>
+    </div>
