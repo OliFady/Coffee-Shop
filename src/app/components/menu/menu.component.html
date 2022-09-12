@@ -5,9 +5,9 @@
   <button class="btn btn2">Cuppuccino</button>
   <button class="btn btn3">Frapuccino</button>
 
-    <input id="search" class="search" type="text" placeholder="Search" [(ngModel)]="filter"  >
+    <input id="search" class="search" type="text" placeholder="Search" [(ngModel)]="filter" (input)="getproducts()">
 
 </div>
 <div class="card">
-    <app-card  *ngFor="let product of source" [product] = "product"></app-card>
+    <app-card [product] = "source"></app-card>
     </div>

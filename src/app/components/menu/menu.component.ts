@@ -9,6 +9,7 @@ import { ProductService } from 'src/app/services/product.service';
 export class MenuComponent implements OnInit {
 
   filter : any;
+  data : any;
   source : any;
   constructor(private api : ProductService) { }
 
@@ -18,7 +19,7 @@ export class MenuComponent implements OnInit {
     })
   }
 
-  get products(){
+  getproducts(){
     return this.source ? 
     this.source.filter((product: { name: { common: string | any[]; }; }) => 
     this.filter ?
