@@ -1,8 +1,10 @@
 .homepage {
-  background-image: url("../../assets/img/Mask\ Group\ 1.png");
+  background-image: url("../../../assets/img/Mask\ Group\ 1.png");
   background-repeat: no-repeat;
   background-size: cover;
   height: 600px;
+  
+  padding-bottom: 50px;
   //background: none;
 }
 .container {
@@ -29,7 +31,7 @@
   color: #cf9775;
 }
 .cup {
-  position: fixed;
+  position: absolute;
   right: 200px;
   top: 250px;
   width: 500px;
@@ -52,6 +54,9 @@
   display: inline-block;
   background-color: #cf9775;
 }
+
+
+
 .btn1:hover {
   border: none;
   background-color: #e6bda4;

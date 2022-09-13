@@ -10,7 +10,7 @@ $primary-color :#FAF4EE;
 
 .container{
     display: flex;
-    width: 65%;
+    width: 100%;
     position: relative;
     padding-top: 5px;
     padding-left: 20px;
@@ -40,9 +40,16 @@ $primary-color :#FAF4EE;
 }
 
 .user-img{
-    position: fixed;
-    right: 70px;
-    top: 20px;
+    position: absolute;
+    top: 30px;
+    width: 40px;
+    height: 40px;
+}
+
+.cart-img{
+    right: 150px;
+    position: absolute;
+    top: 30px;
     width: 40px;
     height: 40px;
 }

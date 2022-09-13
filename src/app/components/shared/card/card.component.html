@@ -1,0 +1,19 @@
+<div class="b1">
+
+  <h1 class="trending"> Trending Now</h1>
+<div class="container">
+<div class="card" *ngFor="let item of product">
+
+    <div class="imgBox">
+      <img src="https://user-images.githubusercontent.com/76598011/189867961-30513c60-54ba-4f67-9131-03a02e8fb7fd.svg" class="mouse">
+    </div>
+  
+    <div class="contentBox">
+      <h3>{{item.name}}</h3>
+      <h2 class="price">{{item.small_price}}</h2>
+      
+      <a href="#" [routerLink]="['/details',item.productId]" routerLinkActive="router-link-active"  class="buy">View Details</a>
+    </div>
+</div>
+  </div>
+</div>
