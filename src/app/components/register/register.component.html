@@ -1,28 +1,40 @@
-<h2>Register</h2>
-<form [formGroup]="register" (ngSubmit)="onSubmit()">
-    <div class="form-group">
-        <label for="firstName">First Name</label>
-        <input type="text" formControlName="firstName" class="form-control" />
+<div class="back">
+<form [formGroup]="register" (ngSubmit)="onSubmit()" class="form-box" id="register">
+    <div class="form-group button-box" id="btn">
 
-    </div>
-    <div class="form-group">
-        <label for="lastName">Last Name</label>
-        <input type="text" formControlName="lastName" class="form-control" />
-
-    </div>
-    <div class="form-group">
-        <label for="username">Username</label>
-        <input type="text" formControlName="username" class="form-control"/>
-
-    </div>
-    <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" formControlName="password" class="form-control" />
-    </div>
-    <div class="form-group">
-        <button class="btn btn-primary">
+        <button routerLink="/login" class="btn btn-link toggle-btn">
+            Login
+        </button>
+        <button class="btn btn-primary toggle-btn active">
             Register
         </button>
-        <a routerLink="/login" class="btn btn-link">Cancel</a>
+        </div>
+    <div class="form-group">
+        
+        <input type="text" formControlName="name" class="form-control input-field" placeholder="Last Name"/>
+
     </div>
+    <div class="form-group">
+        
+        <input type="text" formControlName="email" class="form-control input-field" placeholder="Username"/>
+
+    </div>
+    <div class="form-group">
+        
+        <input type="password" formControlName="password" class="form-control input-field" placeholder="Password"/>
+    </div>
+    <!--
+    <br>
+    <div class="form-group">
+        
+        <label for="start">Date Of Birth: </label>
+
+        <input type="date" id="start" name="dob"
+          
+         min="1900-01-01" max="2003-12-31"><br><br>
+    </div>-->
+
+    <button type='submit'class='submit-btn'>Register</button>
+
 </form>
+</div>

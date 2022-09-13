@@ -9,7 +9,7 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class MenuComponent implements OnInit {
 
-  filter : any;
+  searchFilter : any;
   data : any;
   source : any;
   constructor(private api : ProductService) {
@@ -22,11 +22,17 @@ export class MenuComponent implements OnInit {
     })
   }
 
-  getproducts(){
+  getallproducts(){
+    this.api.getProducts().subscribe(products =>{
+      this.source = products ;
+    })
+  }
+
+  get products(){
     return this.source ? 
-    this.source.filter((product: { name: { common: string | any[]; }; }) => 
-    this.filter ?
-    product.name.common.includes(this.filter ) 
+    this.source.filter((product: { name: string | any[]; }) => 
+    this.searchFilter ?
+    product.name.includes(this.searchFilter ) 
     :product)
     : this.source
  }

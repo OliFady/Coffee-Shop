@@ -1,27 +1,8 @@
 .b1{
   margin-top: 10px;
 }
-.trending{
-  font-size: 60px;
-  font-weight: bold;
-  align-items: center;
-  padding-top: 30px;
-  padding-bottom: 50px;
-  text-align: center;
-  background-color: #FAF4EE;
-}
-.container{
-    background-color: #FAF4EE;
-    padding: 0 1rem;
-    display: grid;
-    row-gap: 1rem;
-    @media (min-width : 376px) {
-  
-        padding: 0 0.5rem;
-        grid-template-columns: repeat(3,1fr);
-        column-gap: 1rem;
-    }
-}
+
+
 .card {
   position: relative;
   width: 450px;

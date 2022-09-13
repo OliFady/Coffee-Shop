@@ -1,19 +1,21 @@
-<h2>Login</h2>
-<form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
-    <div class="form-group">
-        <label for="username">Username</label>
-        <input type="text" formControlName="username" class="form-control" />
 
-    </div>
-    <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" formControlName="password" class="form-control" />
-
-    </div>
-    <div class="form-group">
-        <button class="btn btn-primary">
+<form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="form-box" id="login">
+    <div class="form-group button-box" id="btn" >
+        <button class="btn btn-primary toggle-btn active">
             Login
         </button>
-        <a routerLink="/register" class="btn btn-link">Register</a>
+        <button routerLink="/register" class="btn btn-link toggle-btn">Register</button>
     </div>
+    <div class="form-group">
+        <!--<label for="username">Username</label>-->
+        <input type="text" formControlName="email" class="input-field" placeholder="email"/>
+
+    </div>
+    <div class="form-group ">
+        <!--<label for="password">Password</label>-->
+        <input type="password" formControlName="password" class="input-field" placeholder="Password" />
+    </div>
+
+    <button type='submit'class='submit-btn'>Log in</button>
+
 </form>

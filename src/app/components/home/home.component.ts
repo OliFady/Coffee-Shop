@@ -8,7 +8,7 @@ import { ProductService } from 'src/app/services/product.service';
 })
 export class HomeComponent implements OnInit {
   
-  filter : any;
+  searchFilter : any;
   source : any;
   constructor(private api : ProductService) { }
 
@@ -18,5 +18,7 @@ export class HomeComponent implements OnInit {
       console.log(this.source)
     })
   }
+
+
 
 }

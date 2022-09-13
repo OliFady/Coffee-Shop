@@ -1,0 +1,109 @@
+
+
+.form-box
+{
+    width:380px;
+	border:0.5px solid #CF9775;
+	height:500px;
+	position:relative;
+	margin:2% auto;
+	background:transparent;
+	border-color: #CF9775;
+	padding:10px;
+	align-items: center;
+    margin-top: 100px;
+    
+}
+.button-box
+{
+	width:225px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #CF9775;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border: transparent;
+	outline: none;
+	position: relative;
+    color: #CF9775;
+
+}
+#btn
+{
+	width: 207.5px;
+	color: #CF9775;
+	background: white;
+	border-radius: 30px;
+	transition: .5s;
+}
+
+#btn :hover
+{
+	color: white;
+	background: #CF9775;
+	border-radius: 30px;
+}
+
+#btn .active{
+    color: white;
+	background: #CF9775;
+	border-radius: 30px;
+}
+
+.input-group-register
+{
+    top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	width: 85%;
+	border:0.5px solid #CF9775;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background-color:#CF9775;
+	outline: none;
+	border-radius: 30px;
+	margin-top: 150px;
+    color: white;
+}
+
+#register
+{
+	left:50px;
+}
+#register input
+{
+	color:black;
+	font-size:15;
+}
+
+.submit-btn:hover {
+	background-color:white;
+        color:#CF9775;
+}
+.submit:active {
+	position:relative;
+	top:1px;
+}

@@ -4,6 +4,7 @@ import { HomeComponent } from './components/home/home.component'
 import { LoginComponent } from './components/login/login.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { RegisterComponent } from './components/register/register.component';
+import { CardComponent } from './components/shared/card/card.component';
 import { DetailsComponent } from './components/shared/details/details.component'
 
 
@@ -28,7 +29,8 @@ const routes: Routes = [
   },
   {
     path: 'details/:id', component: DetailsComponent
-  }
+  },
+
 
 ];
 

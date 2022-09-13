@@ -19,6 +19,27 @@
   //padding-bottom: 30px;
   // flex-grow: 1;
 }
+.card{
+  background-color: #FAF4EE;
+  padding: 0 1rem;
+  display: grid;
+  row-gap: 1rem;
+  @media (min-width : 376px) {
+
+      padding: 0 0.5rem;
+      grid-template-columns: repeat(3,1fr);
+      column-gap: 1rem;
+  }
+}
+.trending{
+  font-size: 60px;
+  font-weight: bold;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+  background-color: #FAF4EE;
+}
 .heading {
   //padding-top: 250px;
   font-size: 60px;

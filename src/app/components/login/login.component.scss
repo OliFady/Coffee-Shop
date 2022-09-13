@@ -2,13 +2,14 @@
 {
     width:380px;
 	border:0.5px solid #CF9775;
-	height:500px;
+	height:300px;
 	position:relative;
 	margin:2% auto;
 	background:transparent;
 	border-color: #CF9775;
 	padding:10px;
-    //overflow: hidden;
+	align-items: center;
+	margin-top: 100px;
     
 }
 .button-box
@@ -27,18 +28,31 @@
 	border: transparent;
 	outline: none;
 	position: relative;
+	color: #CF9775;
+
 }
 #btn
 {
-	top: 0;
-	left:0;
-	position: absolute;
-	width: 110px;
-	height: 100%;
-	background: #CF9775;
+	width: 207.5px;
+	color: #CF9775;
+	background: white;
 	border-radius: 30px;
 	transition: .5s;
 }
+
+#btn :hover
+{
+	color: white;
+	background: #CF9775;
+	border-radius: 30px;
+}
+
+#btn .active{
+    color: white;
+	background: #CF9775;
+	border-radius: 30px;
+}
+
 .input-group-login
 {
 	top: 150px;
@@ -76,21 +90,10 @@
 	background-color:#CF9775;
 	outline: none;
 	border-radius: 30px;
-	
-	
-	
+	margin-top: 50px;
+	color: white;
 }
-.check-box
-{
-	margin: 30px 10px 34px 0;
-}
-span
-{
-	color:#777;
-	font-size:12px;
-	bottom:72px;
-	position:absolute;
-}
+
 #login
 {
 	left:50px;

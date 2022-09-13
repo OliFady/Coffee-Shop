@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ProductService } from 'src/app/services/product.service';
 
 @Component({
   selector: 'app-details',
@@ -8,14 +9,30 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DetailsComponent implements OnInit {
 
-  isactive = false;
-  constructor(private route : ActivatedRoute) {
-    this.route.params.subscribe( params => console.log(params) );
+  filter : any;
+  data : any;
+  source : any;
+  constructor(private api : ProductService,private route : ActivatedRoute) {
 
    }
 
+   product : any;
+   productId : any;
+   isactive = false;
+
   ngOnInit(): void {
+    this.api.getProducts().subscribe(products =>{
+      this.source = products ;
+    })
+
   }
+
+  getallproducts(){
+    this.api.getProducts().subscribe(products =>{
+      this.source = products ;
+    })
+  }
+
 
   toggleClass(){
     if (this.isactive == false)
@@ -25,5 +42,7 @@ export class DetailsComponent implements OnInit {
       this.isactive = false
     }
   }
+
+
 
 }
