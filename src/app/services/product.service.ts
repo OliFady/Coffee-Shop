@@ -6,11 +6,13 @@ import { Injectable } from '@angular/core';
 })
 export class ProductService {
 
-  private api = "https://restcountries.com/v3.1/all";
+
+  private api = "https://coffee-shop2022.herokuapp.com/product/get";
 
   constructor(private http : HttpClient) {}
 
   getProducts(){
     return this.http.get(`${this.api}`);
   }
+
 }

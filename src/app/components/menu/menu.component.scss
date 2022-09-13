@@ -1,14 +1,4 @@
-.card{
-  padding: 0 1rem;
-  display: grid;
-  row-gap: 1rem;
-  @media (min-width : 376px) {
 
-      padding: 0 0.5rem;
-      grid-template-columns: repeat(3,1fr);
-      column-gap: 1rem;
-  }
-}
 .btn {
   padding: 9px;
   border-radius: 8px;

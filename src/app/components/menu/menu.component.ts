@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { ProductService } from 'src/app/services/product.service';
 
 @Component({
@@ -11,7 +12,9 @@ export class MenuComponent implements OnInit {
   filter : any;
   data : any;
   source : any;
-  constructor(private api : ProductService) { }
+  constructor(private api : ProductService) {
+
+   }
 
   ngOnInit(): void {
     this.api.getProducts().subscribe(products =>{
