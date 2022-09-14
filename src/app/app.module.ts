@@ -12,7 +12,8 @@ import { MenuComponent } from './components/menu/menu.component';
 import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './components/register/register.component';
-import { DetailsComponent } from './components/shared/details/details.component'
+import { DetailsComponent } from './components/shared/details/details.component';
+import { CartComponent } from './components/cart/cart.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DetailsComponent } from './components/shared/details/details.component'
     LoginComponent,
     CardComponent,
     RegisterComponent,
-    DetailsComponent
+    DetailsComponent,
+    CartComponent
   ],
   imports: [
     BrowserModule,

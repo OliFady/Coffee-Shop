@@ -21,6 +21,6 @@
 <h1 class="trending"> Trending Now</h1>
 
 <div class="card">
-<app-card *ngFor="let product of source" [product] = "product"></app-card>
+<app-card *ngFor="let product of source.slice(0, 3);" [product] = "product"></app-card>
 </div>
 

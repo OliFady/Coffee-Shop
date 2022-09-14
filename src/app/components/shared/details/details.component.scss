@@ -8,7 +8,7 @@
 
 .card-head{
 
-  height: 250px;
+  height: 350px;
 
 }
 .container {
@@ -215,6 +215,27 @@
   color: black;
   margin-top: -13px;
   margin-left: 50px;
+}
+
+.bt {
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 16px;
+  position: relative;
+  right: 150px;
+  top: 0px;
+  //position: absolute;
+  display: inline-block;
+  background-color: #cf9775;
+}
+
+.bt2:hover {
+  background-color: #e6bda4;
+}
+
+.bt2 {
+  border: none;
+  color: #000000;
 }
 
 .product-price b {

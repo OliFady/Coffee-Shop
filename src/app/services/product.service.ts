@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { map } from 'rxjs';
-import { Product } from '../types/api';
+import { Product } from '../types/Product';
 
 @Injectable({
   providedIn: 'root'
@@ -17,10 +17,9 @@ export class ProductService {
     return this.http.get(`${this.api}`);
   }
 
-  getProductByName(name : string){
-    return this.http.get<Product[]>(`${this.api}/${name}`).pipe(
-      map(([res])=> res)
-    );
+
+  getOne(id : number){
+    return this.http.get(`${this.api}/${id}`)
   }
 
 }
