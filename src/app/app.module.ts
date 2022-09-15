@@ -13,7 +13,8 @@ import { LoginComponent } from './components/login/login.component';
 import { FormsModule } from '@angular/forms';
 import { RegisterComponent } from './components/register/register.component';
 import { DetailsComponent } from './components/shared/details/details.component';
-import { CartComponent } from './components/cart/cart.component'
+import { CartComponent } from './components/cart/cart.component';
+import { ProfileComponent } from './profile/profile.component'
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { CartComponent } from './components/cart/cart.component'
     CardComponent,
     RegisterComponent,
     DetailsComponent,
-    CartComponent
+    CartComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,

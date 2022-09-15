@@ -33,6 +33,9 @@ const routes: Routes = [
   },
   {
     path : 'cart/:price', component:CartComponent
+  },
+  {
+    path : 'cart', component:CartComponent
   }
 
 ];

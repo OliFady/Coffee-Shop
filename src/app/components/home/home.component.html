@@ -1,4 +1,8 @@
 <div class="homepage">
+   <!-- <marquee class="marq" behavior="alternate" direction="right">
+        Enjoy your Coffee
+    </marquee>
+    -->
     <div class="container">
         <h1 class="heading">Start your day with a <br> Black Coffee </h1>
         <h3 class="desc"> LOCALLY SOURCED . ROASTED WITH LOVE</h3>
@@ -11,8 +15,8 @@
         <button  class="btn btn2"  >Order Now!</button>
         </a>
 
-        <button  class=" btn btn1">Who Are We?</button>
-
+      <!--  <button  class=" btn btn1">Who Are We?</button>
+      -->
 
     
     <img src="../../../assets/img/cup.png" class="cup">
@@ -21,6 +25,6 @@
 <h1 class="trending"> Trending Now</h1>
 
 <div class="card">
-<app-card *ngFor="let product of source.slice(0, 3);" [product] = "product"></app-card>
+<app-card [product] = "source.slice(0,3)"></app-card>
 </div>
 

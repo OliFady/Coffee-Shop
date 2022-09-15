@@ -17,9 +17,7 @@ export class MenuComponent implements OnInit {
    }
 
   ngOnInit(): void {
-    this.api.getProducts().subscribe(products =>{
-      this.source = products ;
-    })
+   this.getallproducts()
   }
 
   getallproducts(){
@@ -28,12 +26,17 @@ export class MenuComponent implements OnInit {
     })
   }
 
-  get products(){
-    return this.source ? 
-    this.source.filter((product: { name: string | any[]; }) => 
-    this.searchFilter ?
-    product.name.includes(this.searchFilter ) 
-    :product)
-    : this.source
- }
+  getproducts(searchFilter : string){
+    // return this.source ? this.source.filter((product : any) => 
+    // this.searchFilter ?product.name.includes(searchFilter.toLocaleLowerCase()) : product)
+    // : this.source
+    if(this.searchFilter !== ''){
+    this.source = this.source.filter((res : any) => 
+     res.name.toLocaleLowerCase().includes(searchFilter.toLocaleLowerCase())  )  
+    }
+    else {
+      this.getallproducts()
+    }
+  }
+    
 }

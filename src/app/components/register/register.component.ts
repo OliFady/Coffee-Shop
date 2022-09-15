@@ -23,15 +23,8 @@ export class RegisterComponent implements OnInit {
     })
   }
 
-  /*addHero(){
-  this.register = this.register.value;
-  this.register.addHero(this.register).subscribe((response: any) => {
-    console.log(response);
-  });
-}*/
 
 onSubmit(){
-  console.log(this.registerForm.value)
   this.register.register(this.registerForm.value).subscribe(_ =>{
     this.router.navigate(['/login'])
   })

@@ -12,7 +12,7 @@
 
 }
 .container {
-  padding-top: 30px;
+  padding-top: 0px;
   width: 400px;
   height:600px;
   margin: 30px auto;
@@ -64,7 +64,7 @@
 
 .card-body {
   height: 255px;
-  background: wheat;
+  background: #e6bda4;
   border-radius: 0 0 25px 25px;
 }
 
@@ -218,19 +218,19 @@
 }
 
 .bt {
-  padding: 8px;
-  border-radius: 8px;
+  padding: 16px;
+  border-radius: 10px;
   font-size: 16px;
   position: relative;
   right: 150px;
   top: 0px;
   //position: absolute;
   display: inline-block;
-  background-color: #cf9775;
+  background-color: #e6bda4;
 }
 
 .bt2:hover {
-  background-color: #e6bda4;
+  background-color: #cf9775;
 }
 
 .bt2 {

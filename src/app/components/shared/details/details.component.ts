@@ -24,12 +24,9 @@ export class DetailsComponent implements OnInit {
 
   ngOnInit(): void {
     this.productId = this.route.snapshot.params['id']
-
-    console.log(this.productId)
     this.api.getOne(this.productId).subscribe(products =>{
       this.source = products ;
     })
-
 
   }
 

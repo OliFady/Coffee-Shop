@@ -15,15 +15,18 @@ export class CartComponent implements OnInit {
 
     
     price : any;
+    total : any;
     items = this.cartService.getItems();
+    ctr = this.cartService.getctr();
 
   ngOnInit(): void {
-    console.log(this.items)
     this.price = this.route.snapshot.params['price']
+    this.total = this.price * this.ctr;
   }
 
   clear (){
     this.cartService.clearCart()
+    window.location.reload()
   }
 
 }
